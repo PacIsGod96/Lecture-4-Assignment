@@ -37,4 +37,21 @@ function upperCase(){
     }
     return newString
 }
-console.log(upperCase(26))
+console.log(upperCase())
+
+function oppositeCase(){
+    let input = prompt(`Enter a word or sentence: `)
+    let newString = ``
+    for(let x = 0; x < input.length; x++){
+        let letterNumber = input.charCodeAt(x)
+        if((letterNumber >= 97) && (letterNumber <=122)){
+            newString = newString + String.fromCharCode(letterNumber - 32)
+        }else if((letterNumber >= 65) && (letterNumber <=90)){
+             newString = newString + String.fromCharCode(letterNumber + 32)
+        }else{
+            newString = newString + input[x]
+        }
+    }
+    return newString
+}
+console.log(oppositeCase())
