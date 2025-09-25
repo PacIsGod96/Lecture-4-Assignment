@@ -12,5 +12,22 @@ console.log(max(-20, 4, 6, 9))
 
 function reverse(){
     let input = prompt(`Enter a number: `)
-    
+    let newNumber = ``
+    for(let i = input.length-1; i >= 0; i--){
+        newNumber = newNumber + input[i]
+    }
+    if(newNumber[newNumber.length - 1] == `-`){
+        newNumber = newNumber.slice(0, -1)
+        newNumber = `-` + newNumber
+    }
+    return newNumber
+} 
+console.log(reverse())
+
+function upperCase(){
+    let input = prompt(`Enter a word or sentence: `)
+    let newString = ``
+    for(let x = 0; x < input.length; x++){
+        let letterNumber
+    }
 }
